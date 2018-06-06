@@ -1,3 +1,8 @@
+
+# Nombre : Fidel Callupe Ganoza 20131319E
+
+# A)
+#los primeros 20 elementos del paquete methods
 ls("package:methods")
 #[1] "addNextMethod"                  
 #[2] "allGenerics"                    
@@ -22,10 +27,14 @@ ls("package:methods")
 
 #hay en total 218 items
 
+# B)
+#determina el entorno que posee cada funcion
 environment(read.table)
 environment(data)
 environment(matrix)
 environment(jpeg)
 
+# C)
+#usamos ls para confirmar que "smoothScatter" es parte del paquete graphics
 ls("package:graphics")
 

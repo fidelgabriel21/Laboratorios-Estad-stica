@@ -1,3 +1,9 @@
+
+# Nombre : Fidel Callupe Ganoza 20131319E
+
+# A)
+#hacemos un bucle while para hacer un factorial
+#case 1
 minum<- 5
 producto <- 1
 while(minum>=0){
@@ -11,6 +17,7 @@ while(minum>=0){
 }
 producto
 
+#case 2
 minum<- 12
 producto <- 1
 while(minum>=0){
@@ -24,6 +31,7 @@ while(minum>=0){
 }
 producto
 
+#case 3
 minum<- 0
 producto <- 1
 while(minum>=0){
@@ -37,8 +45,8 @@ while(minum>=0){
 }
 producto
 
-############################################
-
+# B)
+#completamos el while,dando siertas condiciones
 mystring <- "R fever"
 index <- 1
 ecount <- 0
@@ -54,5 +62,3 @@ if(ecount == 2){
   result<-substr(x=mystring,start=1,stop=index-1)
 }
 result
-
-############################################
