@@ -44,21 +44,13 @@ F <- (E+D)/2
 #Rescato el valor que guarde de la matriz A
 A <- X
 #Operacion de A[4,2] - F
-M <- A[4,2]
-M <- M - F
-A[4,2] <- M
+A[4,2] <- F
 #Operacion de A[1,2] - F
-M <- A[1,2]
-M <- M - F
-A[1,2] <- M
+A[1,2] <- F
 #Operacion de A[4,1] - F
-M <- A[4,1]
-M <- M - F
-A[4,1] <- M
+A[4,1] <- F
 #Operacion de A[1,1] - F
-M <- A[1,1]
-M <- M - F
-A[1,1] <- M
+A[1,1] <- F
 A
 
 # G)

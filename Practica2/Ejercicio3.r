@@ -71,4 +71,4 @@ if(substr(x=diag(x=mymat),start=1,stop=1)=="g"|| substr(x=diag(x=mymat),start=1,
 }else{
   diag(x=tam)
 }
-
+mymat

@@ -17,6 +17,10 @@ sexo.f <- factor(x=sexo)
 partido.f <- factor(x=partido)
 sexo.f
 partido.f
+#-No hya necesidad de usar ordered=TRUE dado que los niveles no se consideran
+#intuitivamente "superior" o "siguiente" al otro
+#-Usando el argumento ordered=TRUE,confirma que los niveles seguiran un orden
+#además, el orden estricto de estos niveles se muestra mediante el símbolo "<"
 
 # C)
 partido[sexo.f=="M"] #factor de los partidos elegidos por hombres
@@ -33,4 +37,15 @@ porcentaje
 #creo un factor con niveles de confianza
 limite <- c(0,30,70,100)
 cut(x=porcentaje,breaks=limite,right=F,include.lowest=T)
+
+#Guardo la informacion para extraer el fator de los partidos elegidos
+cat <- cut(x=porcentaje,breaks=limite,right=F,include.lowest=T)
+cat[partido.f =="Laboralistas"]
+cat[partido.f =="Nacional"]
+
+#Laboralistas, A pesar de pertenecer al partido Laborista
+#la mayoria no confio en que su partido superaria a los del partido Nacional
+#Nacional, Los del partido Nacional puso mas confianza en su propio 
+#partido,dado que sus porcentajes de confianzas no estuvieron entre <70.100]
+
 
