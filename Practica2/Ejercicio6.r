@@ -19,4 +19,5 @@ qux
 apply(qux,2,FUN=diag)
 apply(qux,3,FUN=diag)
 
+
 # completar...........
