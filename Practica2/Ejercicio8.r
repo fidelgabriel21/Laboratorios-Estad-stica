@@ -4,8 +4,6 @@
 # A)
 #realizaremos una funcion y la verificaremos con unos casos
 matinvert<-function(mylist,noinv,nonmat,silent1){
-  #noinv<-"NA"
-  #nonmat<-"no es matriz!"
   if(is.list(mylist)){
     if(length(mylist) != 0){
       if(!is.character(nonmat)){

@@ -37,4 +37,5 @@ environment(jpeg)
 # C)
 #usamos ls para confirmar que "smoothScatter" es parte del paquete graphics
 ls("package:graphics")
-
+rm(list=ls())
+ls()

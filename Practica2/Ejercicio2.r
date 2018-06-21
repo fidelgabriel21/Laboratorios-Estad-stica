@@ -47,3 +47,4 @@ which(matrix(c(T,F,T,T),2,2),a=T)
 #---Posicional
 #---matrix(data = NA, nrow = 1, ncol = 1, byrow = FALSE,dimnames = NULL)
 #---data=c(T,F,T,T), nrow=2,ncol=2
+

@@ -46,4 +46,4 @@ mtext("Presion de vapor de Mercurio\ncomo una funcion de la Temperatura",side = 
 #Fuente para el texto
 
 # B)
-#...completar
+#...completar 

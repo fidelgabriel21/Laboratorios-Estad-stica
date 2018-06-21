@@ -31,44 +31,74 @@ result
 #creamos las condiciones if y else y evaluamos las matrices
 #caso 1
 mymat <- matrix(as.character(1:16),4,4)
-tam <-nrow(mymat)
-tam
-mymat
 mymat.d <- diag(x=mymat)
-mymat.d
 caract <- substr(x=mymat.d,start=1,stop=1)
 caract
-if(caract=="g"|| caract == "G"){
-  "AQUI"
-}else{
-  diag(x=tam)
+a<-0
+if(caract[1]=="g"|| caract[1] == "G"){
+  mymat[1,1]<-"AQUI"
+  a<-1
 }
+if(caract[2]=="g"|| caract[2] == "G"){
+  mymat[2,2]<-"AQUI"
+  a<-1
+}
+if(caract[3]=="g"|| caract[3] == "G"){
+  mymat[3,3]<-"AQUI"
+  a<-1
+}
+if(caract[4]=="g"|| caract[4] == "G"){
+  mymat[4,4]<-"AQUI"
+  a<-1
+}
+if(a == 0){
+  mymat<-diag(x=tam)
+}
+mymat
 
 #caso 2
 mymat <- matrix(c("DANDELION","Hyacinthus","Gerbera",
                       "MARIGOLD","geranium","ligularia",
                       "Pachysandra","SNAPDRAGON","GLADIOLUS"),3,3)
 tam <-nrow(mymat)
-tam
-mymat
 mymat.d <- diag(x=mymat)
-mymat.d
 caract <- substr(x=mymat.d,start=1,stop=1)
 caract
-if(caract=="g"|| caract == "G"){
-  "AQUI"
-}else{
-  diag(x=tam)
+a<-0
+if(caract[1]=="g"|| caract[1] == "G"){
+  mymat[1,1]<-"AQUI"
+  a<-1
 }
+if(caract[2]=="g"|| caract[2] == "G"){
+  mymat[2,2]<-"AQUI"
+  a<-1
+}
+if(caract[3]=="g"|| caract[3] == "G"){
+  mymat[3,3]<-"AQUI"
+  a<-1
+}
+if(a == 0){
+  mymat<-diag(x=tam)
+}
+mymat
 
 #caso 3
-mymat <- matrix(c("GREAT","exercises","right","here"),2,2,byrow=T)
+mymat <- matrix(c("GREAT","ejercicios","agua","hey"),2,2,byrow=T)
 tam <-nrow(mymat)
-tam
-mymat
-if(substr(x=diag(x=mymat),start=1,stop=1)=="g"|| substr(x=diag(x=mymat),start=1,stop=1) == "G"){
-  mymat<-diag(mymat)<-"AQUI"
-}else{
-  diag(x=tam)
+mymat.d <- diag(x=mymat)
+caract <- substr(x=mymat.d,start=1,stop=1)
+caract
+a<-0
+if(caract[1]=="g"|| caract[1] == "G"){
+  mymat[1,1]<-"AQUI"
+  a<-1
+}
+if(caract[2]=="g"|| caract[2] == "G"){
+  mymat[2,2]<-"AQUI"
+  a<-1
+}
+if(a == 0){
+  mymat<-diag(x=tam)
 }
 mymat
+

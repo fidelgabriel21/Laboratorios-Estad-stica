@@ -2,7 +2,6 @@
 # Nombre : Fidel Callupe Ganoza 20131319E
 
 # A)
-#hacer lo mismo con un for......terminar....
 loopvec1 <- 5:7
 loopvec2 <- 9:6
 mat1 <- matrix(NA,length(loopvec1),length(loopvec2))
@@ -12,6 +11,23 @@ for(i in 1:length(loopvec1)){
     mat1[i,j] <- loopvec1[i]*loopvec2[j]
     }
   }
+mat1
+
+loopvec1 <- 5:7
+loopvec2 <- 9:6
+mat1 <- matrix(NA,length(loopvec1),length(loopvec2))
+mat1
+limit<-length(loopvec1)*length(loopvec2)
+j<- 1
+k<- 1
+for(i in 1:limit){
+  mat1[j,k] <- loopvec1[j]*loopvec2[k]
+  k<- k+1
+  if(k>4){
+    j<- j+1
+    k<- 1
+  }
+}
 mat1
 
 # B)
