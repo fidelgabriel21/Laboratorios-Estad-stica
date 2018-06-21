@@ -47,3 +47,30 @@ mtext("Presion de vapor de Mercurio\ncomo una funcion de la Temperatura",side = 
 
 # B)
 #...completar 
+library(package="grid")
+#Mueve a una nueva pagina
+grid.newpage()
+#Estas funciones proporcionan formas de agregar o eliminar ventanas graficas y de navegar entre ventanas
+pushViewport(viewport(layout=grid.layout(1, 1),gp=gpar(cex=0.9))) 
+pushViewport(viewport(layout.pos.row=1,layout.pos.col=1))
+marg.v<-c(4,3,4,3)
+pushViewport(plotViewport(margins=marg.v))
+pushViewport(dataViewport(xData=pressure$temperature,yData=pressure$pressure))
+#Esta funcion crea y dibuja rectangulos.
+grid.rect()
+#Esta funcion crea y dibuja un eje x.
+ejex<-c(0,50,100,150,200,250,300,350)
+grid.xaxis(at=ejex,name="coord.x") 
+#Esta funcion crea y dibuja un eje y.
+ejey<-c(0,200,400,600,800)
+grid.yaxis(at=ejey,name="coord.y")
+#Edita la Descripción De Un Objeto Gráfico De Cuadrícula
+grid.edit(gPath("coord.y","labels"),rot=90) 
+#Esta funcion crea y dibuja simbolos de datos
+grid.points(x=pressure$temperature,y=pressure$pressure,gp=gpar(cex=0.6)) 
+#Estas funciones crean y dibujan expresiones de texto
+grid.text(label="presion",x=unit(-2.5,"line"),rot=90)
+grid.text(label="temperatura",y=unit(-3,"line"),rot=0) 
+grid.text(label="Presion de vapor de Mercurio\ncomo una funcion de la Temperatura",x=unit(x=180,units="native"),y=unit(x=950,units="native"),gp=gpar(fontface="bold")) 
+
+
